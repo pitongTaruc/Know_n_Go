@@ -1,0 +1,51 @@
+<div class="navbar navbar-app navbar-absolute-top">
+    <div class="btn-group pull-left">
+        <div ui-toggle="uiSidebarLeft" class="btn sidebar-toggle">
+            <i class="fa fa-bars"></i>
+        </div>
+    </div>
+</div>
+
+<div class="scrollable">
+    <div class="scrollable-content">
+        <br><br>
+        <center>
+            <div class="list-group-item list-group-item-home" style="background-color: lightslategrey;position: relative;top: 10px">
+                <small style="color: white;text-shadow: 4px 4px 4px black;font-weight: bold;font-size: 20px"><i class="fa fa-building"></i> Universities and Colleges</small><br><br>
+            </div>
+        </center>
+        <ui-state id='activeTab' default='1'></ui-state>
+        <div class="btn-group justified nav-tabs">
+            <a ui-set="{'activeTab': 1}" 
+               ui-class="{'active': activeTab == 1}" class="btn btn-default">Public</a>
+
+            <a ui-set="{'activeTab': 2}" 
+               ui-class="{'active': activeTab == 2}" class="btn btn-default">Private</a>
+        </div>  
+        <div class='section'>
+            <div ui-if="activeTab == 1">
+                <div class="list-group">
+                    <br><br>
+                    <span ng-repeat="data in schools| filter : 'public'" ng-click="displaySchool(data.id)" class="list-group-item">
+                        <br>
+                        <span>{{ data.name}}</span>
+                        <br><br>
+                    </span>
+                </div>
+                <br><br><br><br>
+            </div>
+
+            <div ui-if="activeTab == 2">
+                <div class="list-group">
+                    <br><br>
+                    <span ng-repeat="data in schools| filter : 'private'" ng-click="displaySchool(data.id)" class="list-group-item">
+                        <br>
+                        <span>{{ data.name}}</span>
+                        <br><br>
+                    </span>
+                </div>
+                <br><br><br><br>
+            </div>
+        </div>
+    </div>
+</div>

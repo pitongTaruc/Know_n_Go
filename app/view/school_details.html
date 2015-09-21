@@ -1,0 +1,66 @@
+<div class="navbar navbar-app navbar-absolute-top">
+    <div class="btn-group pull-left">
+        <div ui-toggle="uiSidebarLeft" class="btn sidebar-toggle">
+            <a href="#/schools"><i class="fa fa-arrow-left"></i></a>
+        </div>
+    </div>
+</div>
+
+<div class="scrollable" ng-repeat="data in getSchool(actionID)">
+    <div class="scrollable-content">
+        <br><br>
+        <center>
+            <div class="list-group-item list-group-item-home" style="background-color: lightslategrey;position: relative;top: 10px">
+                <small style="color: white;text-shadow: 4px 4px 4px black;font-weight: bold;font-size: 20px"><i class="fa fa-building"></i> {{ data.name}}</small><br><br>
+            </div>
+        </center>
+        <ui-state id='activeTab' default='1'></ui-state>
+        <div class="btn-group justified nav-tabs">
+            <a ui-set="{'activeTab': 1}" 
+               ui-class="{'active': activeTab == 1}" class="btn btn-default">Sign In</a>
+
+            <a ui-set="{'activeTab': 2}" 
+               ui-class="{'active': activeTab == 2}" class="btn btn-default">Sign Up</a>
+        </div>  
+        <div class='section'>
+            <div ui-if="activeTab === 1">
+                <section>
+                    <br><br>
+                    <center>
+                        <img src="" height="150" width="100%" />
+                        <br><br>
+                        <p style="text-align: justify;text-indent: 20px;font-size: 16px">
+                            Mindanao University of Science and Technology is a university ! The students here are called musteans .
+                            werewr ewr we jr g fd gfdrwerwe sdlorem lorem lorem e ewrhes jfhdjs ffgweugf sdfegui fwe fewgf .
+                        </p>
+                        <br><br>
+                    </center>
+                    <strong>The President</strong><br>
+                    <p style="text-indent: 20px">- Ricardo E. Rotoras</p>
+                    <br>
+                    <strong>Address</strong><br>
+                    <p style="text-indent: 20px">- CM Recto Lapasan sa Cagayan de Oro City</p>
+                    <br><br>
+                    <center><a href="#school_location" class="btn btn-primary btn-block"><i class="fa fa-location-arrow"></i>
+                            <strong>Locate in map</strong></strong></a></center>
+                    <br><br><br><br>
+                </section>
+            </div>
+
+            <div ui-if="activeTab === 2">
+                <section>
+                    <div class="list-group">
+                        <br><br>
+                        <span ng-repeat="data in courses" ng-click="displayCourse(data.id)" class="list-group-item">
+                            <br>
+                            <span>{{ data.name}}</span>
+                            <br><br>
+                        </span>
+                        <br><br><br><br>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+    </div>
+</div>

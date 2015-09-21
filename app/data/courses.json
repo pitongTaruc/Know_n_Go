@@ -1,0 +1,32 @@
+[
+    {
+        "id" : 1,
+        "name" : "BS and Information Technology",
+        "tuition" : 11000
+    },
+    {
+        "id" : 2,
+        "name" : "BS and Computer Science",
+        "tuition" : 11000
+    },
+    {
+        "id" : 3,
+        "name" : "BS and Marine Transformation",
+        "tuition" : 11000
+    },
+    {
+        "id" : 4,
+        "name" : "BS and Civil Engineering",
+        "tuition" : 11000
+    },
+    {
+        "id" : 5,
+        "name" : "BS and Architecture",
+        "tuition" : 11000
+    },
+    {
+        "id" : 6,
+        "name" : "BS and Computer Engineering",
+        "tuition" : 11000
+    }
+]

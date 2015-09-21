@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "name": "Mindanao University of Science and Technology",
+        "description": "This is MUST .",
+        "image": "must.jpg",
+        "type": "public"
+    },
+    {
+        "id": 2,
+        "name": "Xavier University",
+        "description": "This is Xavier .",
+        "image": "xu.jpg",
+        "type": "private"
+    },
+    {
+        "id": 3,
+        "name": "Capitol University",
+        "description": "This is CU .",
+        "image": "cu.jpg",
+        "type": "private"
+    },
+    {
+        "id": 4,
+        "name": "Bukidnon State University",
+        "description": "This is BSU .",
+        "image": "bsu.jpg",
+        "type": "public"
+    },
+    {
+        "id": 5,
+        "name": "Cagayan de Oro College",
+        "description": "This is COC",
+        "image": "coc.jpg",
+        "type": "public"
+    },
+    {
+        "id": 6,
+        "name": "Tagoloan Community College",
+        "description": "This is TCC .",
+        "image": "tcc.jpg",
+        "type": "public"
+    },
+    {
+        "id": 7,
+        "name": "Lourdes College",
+        "description": "This is LC .",
+        "image": "lc.jpg",
+        "type": "private"
+    },
+    {
+        "id": 8,
+        "name": "Private University",
+        "description": "This is PU .",
+        "image": "pu.jpg",
+        "type": "private"
+    }
+]

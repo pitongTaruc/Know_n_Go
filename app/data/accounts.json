@@ -1,0 +1,30 @@
+[
+	{
+		"id": 1,
+		"userName": "SensiKo",
+		"email": "perich.29@gmail.com",
+		"password": "password",
+		"type": "admin"
+	},
+	{
+		"id": 2,
+		"userName": "Jon",
+		"email": "Jon@gmail.com",
+		"password": "password",
+		"type": "admin"
+	},
+	{
+		"id": 3,
+		"userName": "Jkoi",
+		"email": "jkoi@gmail.com",
+		"password": "password",
+		"type": "admin"
+	},
+	{
+		"id": 4,
+		"userName": "Juddy",
+		"email": "juddy@gmail.com",
+		"password": "password",
+		"type": "admin"
+	}
+]

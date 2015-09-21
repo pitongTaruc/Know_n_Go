@@ -1,0 +1,24 @@
+<div class="navbar navbar-app navbar-absolute-top">
+    <div class="btn-group pull-left">
+        <div ui-toggle="uiSidebarLeft" class="btn sidebar-toggle">
+            <a href="#/schools"><i class="fa fa-arrow-left"></i></a>
+        </div>
+    </div>
+</div>
+
+<div class="scrollable" ng-repeat="data in getSchool(actionID)">
+    <div class="scrollable-content">
+        <br><br>
+        <center>
+            <div class="list-group-item list-group-item-home" style="background-color: lightslategrey;position: relative;top: 10px">
+                <small style="color: white;text-shadow: 4px 4px 4px black;font-weight: bold;font-size: 20px"><i class="fa fa-building"></i> {{ data.name}}</small><br><br>
+            </div>
+        </center>
+        <div class='section' ng-repeat="data in getCourse(actionID)">
+            <br><br>
+            <h4>{{ data.name }}</h4><hr>
+            <br><br>
+            Tuition : {{ data.tuition}}
+        </div>
+    </div>
+</div>
